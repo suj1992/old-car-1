@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 
 pipe = pickle.load(open('pipe1.pkl','rb'))
-df = pickle.load(open('df.pkl','rb'))
+df = pd.read_pickle('df.pkl')
 
 st.title("Old Car Price Predictor")
 
